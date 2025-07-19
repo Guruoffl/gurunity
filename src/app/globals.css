@@ -1,0 +1,249 @@
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f3f2ef;
+}
+
+/* CSS Variables for Gurunity Theme */
+:root {
+  --primary-purple: #7c3aed;
+  --primary-purple-dark: #5b21b6;
+  --primary-purple-light: #a855f7;
+  --secondary-purple: #e9d5ff;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --border-radius: 8px;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Styles */
+a {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-purple-dark);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: var(--primary-purple);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-purple-dark);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-purple);
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-500 {
+  color: var(--gray-500);
+}
+
+.text-gray-600 {
+  color: var(--gray-600);
+}
+
+.text-gray-700 {
+  color: var(--gray-700);
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.border {
+  border: 1px solid var(--gray-200);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-50);
+}
+
+.bg-purple {
+  background-color: var(--primary-purple);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-purple {
+  color: var(--primary-purple);
+}
+
+.shadow {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  .hidden-mobile {
+    display: none;
+  }
+}
+

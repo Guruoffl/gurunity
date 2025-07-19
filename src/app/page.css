@@ -1,0 +1,19 @@
+.main-feed-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Additional responsive styles for main content */
+@media (max-width: 768px) {
+  .main-feed-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-feed-content {
+    gap: 0;
+  }
+}
+

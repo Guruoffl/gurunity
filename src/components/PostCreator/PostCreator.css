@@ -1,0 +1,161 @@
+.post-creator {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.post-creator-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.creator-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--gray-200);
+}
+
+.post-input-container {
+  flex: 1;
+}
+
+.post-input-button {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--gray-300);
+  border-radius: 24px;
+  background-color: var(--white);
+  color: var(--gray-500);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-input-button:hover {
+  border-color: var(--gray-400);
+  background-color: var(--gray-50);
+}
+
+.post-input-button:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.1);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  justify-content: center;
+  color: var(--gray-600);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-button:hover {
+  background-color: var(--gray-100);
+  color: var(--gray-800);
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-icon {
+  color: #10b981;
+}
+
+.video-icon {
+  color: #3b82f6;
+}
+
+.event-icon {
+  color: #f59e0b;
+}
+
+.article-icon {
+  color: #ef4444;
+}
+
+.action-text {
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-creator {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .post-creator-header {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .creator-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .post-input-button {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .post-actions {
+    gap: 4px;
+  }
+
+  .action-button {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .action-text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-actions {
+    flex-wrap: wrap;
+  }
+
+  .action-button {
+    flex: 0 1 calc(50% - 2px);
+    min-width: 0;
+  }
+
+  .action-button .action-text {
+    display: block;
+    font-size: 12px;
+  }
+}
+
