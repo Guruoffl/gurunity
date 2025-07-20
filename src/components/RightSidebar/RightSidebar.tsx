@@ -164,9 +164,8 @@ const RightSidebar: React.FC = () => {
       {/* Today's Most Viewed Courses */}
       <div className="courses-section card">
         <div className="section-header">
-          <h4>Today's most viewed courses</h4>
-        </div>
-        
+          <h4>Today&apos;s most viewed courses</h4>
+        </div>        
         <div className="courses-list">
           <div className="course-item">
             <div className="course-number">1</div>
